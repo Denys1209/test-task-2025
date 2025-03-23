@@ -2,7 +2,6 @@ export default abstract class Service<TModel> {
   protected baseUrl: string;
 
   protected constructor(addUrl: string) {
-    console.debug(process.env.NEXT_PUBLIC_URL_API);
     this.baseUrl = `${process.env.NEXT_PUBLIC_URL_API}/${addUrl}`;
   }
 
